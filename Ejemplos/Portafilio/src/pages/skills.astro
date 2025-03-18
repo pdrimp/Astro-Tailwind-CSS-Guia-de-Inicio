@@ -1,0 +1,94 @@
+---
+import MainLayout from '../layouts/Layout.astro';
+
+const skills = [
+  {
+    category: "Frontend",
+    technologies: ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Tailwind CSS"]
+  },
+  {
+    category: "Backend",
+    technologies: ["Node.js", "Express", "PHP", "Python", "SQL"]
+  },
+  {
+    category: "Herramientas",
+    technologies: ["Git", "GitHub", "VS Code", "Docker", "Webpack"]
+  }
+];
+---
+
+<MainLayout title="Mis Habilidades">
+  <div class="container mx-auto px-4 py-8 h-screen">
+    <h1 class="text-4xl font-bold mb-8 text-center">Mis Habilidades</h1>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      {skills.map((skillGroup) => (
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-2xl font-semibold mb-4 text-blue-600">{skillGroup.category}</h2>
+          <ul class="space-y-2">
+            {skillGroup.technologies.map((tech) => (
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Nivel de dominio</h2>
+      
+      <div class="space-y-10">
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">HTML & CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">JavaScript</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">React</span>
+            <span>80%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Backend</span>
+            <span>75%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a href="/" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg">
+        Volver al inicio
+      </a>
+    </div>
+  </div>
+</MainLayout>

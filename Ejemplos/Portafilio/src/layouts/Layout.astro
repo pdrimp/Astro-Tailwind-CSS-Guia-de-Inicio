@@ -1,0 +1,19 @@
+---
+import Navigation from "../components/Navegacion.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Primera Parcial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex">
+  <Navigation />
+  <main class="flex-1 p-8">
+    <slot />
+  </main>
+</body>
+</html>
