@@ -1,6 +1,6 @@
-# Examen de Programación Web
-
 # Portafolio
+
+Ejemplo de un portafolio web desarrollado con las tecnologias de Astro y TailwindCSS
 
 ## Descripción
 
