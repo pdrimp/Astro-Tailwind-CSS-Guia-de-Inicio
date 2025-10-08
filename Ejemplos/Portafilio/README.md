@@ -25,7 +25,3 @@ Este es un proyecto de sitio web personal desarrollado para el examen de Program
 2. Instala las dependencias: `npm install`
 3. Ejecuta el servidor de desarrollo: `npm run dev`
 4. Abre tu navegador en: `http://localhost:4321`
-
-## Autor
-
-[Leonardo]
