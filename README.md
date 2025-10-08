@@ -17,7 +17,7 @@ Asegúrate de tener instalados los siguientes programas y extenciones en tu sist
 ## Instalación
 1. Clona este repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/pdrimp/Astro-Tailwind-CSS-Guia-de-Inicio
    cd tu-repositorio
    ```
 2. Instala Astro:
